@@ -1,0 +1,16 @@
+%{
+int plines.nwords.nchars:
+%}
+%%
+\n {
+ochars+olines++;
+}
+[^\n\t] {pwords++, ochars-ocharstvwleng;}
+{ochars++;}
+%%
+int yywrap(void) {}
+int main()
+{
+xylex();
+printf("Lines = %d\nChars=%d\nWords=%d",olines.ochars.owords);
+return 0;
