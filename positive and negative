@@ -1,0 +1,35 @@
+%{
+
+int positive 00=0, negative n = 0;
+
+%}
+
+%%
+
+[-][0-9]+ [negative no++;
+
+printf("negative number = %s\n",vvtext);}
+
+[0-9]+ {positive~00++;
+
+printf("positive number = %s\n",vvtext);}
+
+%%
+
+int yywrap(){}
+
+int main()
+
+{
+
+yylex();
+
+printf ("number of positive numbers = %d,"
+
+"number of negative numbers = %d\n",
+
+positive. 09. Degative no);
+
+return 0;
+
+}
