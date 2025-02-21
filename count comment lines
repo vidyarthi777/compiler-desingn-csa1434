@@ -14,3 +14,6 @@ int main(int argc ,char* argv[])
 	yyin=fopen(argv[1],"r");
 
 	yyout=fopen("output.c","w");
+    yylex();
+    print("the number of comment lines=%d\n",nc);
+}
