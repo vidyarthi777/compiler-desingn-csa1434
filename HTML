@@ -14,3 +14,9 @@ return 1;
 }
 
 int main()
+{
+yyin=fopen("sample.html","r");
+yyout=fopen("output.txt","w");
+yylex();
+return0;
+}
