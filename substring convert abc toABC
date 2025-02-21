@@ -1,0 +1,14 @@
+%{
+%}
+%%
+
+[a-z] {printf("%c" yytext[0]-32);}
+.{}
+
+%%
+int yywarp(void){}
+int main()
+{
+printf("\nente the string :");
+yylex();
+}
